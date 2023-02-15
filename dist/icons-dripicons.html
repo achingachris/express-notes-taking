@@ -1,0 +1,1322 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="utf-8" />
+        <title>Dripicons | Amezia - Admin & Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="dark">
+    
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-light.png" alt="" height="17">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-24 header-item waves-effect" id="vertical-menu-btn">
+                        <i class="mdi mdi-menu"></i>
+                    </button>
+
+                    <!-- Tools -->
+                    <div class="d-none d-sm-block ms-1">
+                        <div class="dropdown">
+                            <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-plus-box-multiple"></i>
+                                <span class="d-none d-xl-inline-block ms-1">Tools</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item">Photoshop</a>
+                                <a href="javascript:void(0);" class="dropdown-item">Visual Studio</a>
+                                <a href="javascript:void(0);" class="dropdown-item">Sublime Text 3</a>
+                                <a href="javascript:void(0);" class="dropdown-item">Phpstorm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-none d-lg-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-target="#search-wrap">
+                            <i class="mdi mdi-airplane me-2 font-size-16"></i>Landing
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Search input -->
+                <div class="search-wrap" id="search-wrap">
+                    <div class="search-bar">
+                        <input class="search-input form-control" placeholder="Search" />
+                        <a href="#" class="close-search toggle-search" data-target="#search-wrap">
+                            <i class="mdi mdi-close-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="dropdown d-none d-lg-inline-block">
+                        <button type="button" class="btn header-item toggle-search noti-icon waves-effect"
+                            data-target="#search-wrap">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-none d-md-block">
+                        <button type="button" class="btn header-item waves-effect" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img class="me-2" src="assets/images/flags/us.jpg" alt="Header Language" height="16"> English <span
+                                class="mdi mdi-chevron-down"> </span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="me-1" height="12"> <span
+                                    class="align-middle"> German </span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="me-1" height="12"> <span
+                                    class="align-middle"> Italian </span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/french.jpg" alt="user-image" class="me-1" height="12"> <span
+                                    class="align-middle"> French </span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span
+                                    class="align-middle"> Spanish </span>
+                            </a>
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="me-1" height="12"> <span
+                                    class="align-middle"> Russian </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Notification -->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect notification-step"
+                            id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-bell-outline"></i>
+                            <span class="badge bg-danger rounded-pill">2</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <h6 class="m-0">Notifications (258) </h6>
+                            </div>
+
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                <i class="mdi mdi-cart-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1 font-size-12">Dummy text of the printing and typesetting
+                                                    industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-warning rounded-circle font-size-16">
+                                                <i class="mdi mdi-message"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1 font-size-15">New Message received</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1 font-size-12">You have 87 unread messages</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-info rounded-circle font-size-16">
+                                                <i class="mdi mdi-help"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1 font-size-12">It is a long established fact that a reader will
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                <i class="mdi mdi-cart-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1 font-size-12">Dummy text of the printing and typesetting
+                                                    industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-danger rounded-circle font-size-16">
+                                                <i class="mdi mdi-cart-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="flex-1">
+                                            <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                                            <div class="text-muted">
+                                                <p class="mb-1 font-size-12">Dummy text of the printing and typesetting
+                                                    industry.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> View all
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- full-screen -->
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                            <i class="mdi mdi-fullscreen"></i>
+                        </button>
+                    </div>
+
+                    <!-- User -->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect user-step" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/user-1.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1">Amelia</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i class="dripicons-user d-inline-block text-muted me-2"></i>
+                                Profile</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-wallet d-inline-block text-muted me-2"></i> My
+                                Wallet</a>
+                            <a class="dropdown-item d-block" href="#"><i
+                                    class="dripicons-gear d-inline-block text-muted me-2"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="dripicons-lock d-inline-block text-muted me-2"></i> Lock
+                                screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="dripicons-exit d-inline-block text-muted me-2"></i>
+                                Logout</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                            <i class="mdi mdi-spin mdi-cog"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Main</li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect">
+                                <i class="mdi mdi-speedometer"></i>
+                                <span class="badge rounded-pill bg-danger float-end">9+</span>
+                                <span>Dashboards</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="index.html">Dashboard 1</a></li>
+                                <li><a href="index-2.html">Dashboard 2</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-email-variant"></i>
+                                <span>Email</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="email-inbox.html">Inbox</a></li>
+                                <li><a href="email-read.html">Read Email</a></li>
+                                <li><a href="email-compose.html">Compose Email</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Calender -->
+                        <li>
+                            <a href="calendar.html" class=" waves-effect">
+                                <i class="mdi mdi-calendar"></i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+
+
+                        <li class="menu-title">Components</li>
+
+                        <!-- UI Elements -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-briefcase-check"></i>
+                                <span>UI Elements</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="ui-alerts.html">Alerts</a></li>
+                                <li><a href="ui-buttons.html">Buttons</a></li>
+                                <li><a href="ui-cards.html">Cards</a></li>
+                                <li><a href="ui-dropdowns.html">Dropdowns</a></li>
+                                <li><a href="ui-modals.html">Modals</a></li>
+                                <li><a href="ui-typography.html">Typography</a></li>
+                                <li><a href="ui-progress.html">Progress Bars</a></li>
+                                <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
+                                <li><a href="ui-tooltips-popovers.html">Tooltips &amp; Popover</a></li>
+                                <li><a href="ui-carousel.html">Carousel</a></li>
+                                <li><a href="ui-pagination.html">Pagination</a></li>
+                                <li><a href="ui-video.html">Video</a></li>
+                                <li><a href="ui-colors.html">Colors</a></li>
+                                <li><a href="ui-grid.html">Grid System</a></li>
+                                <li><a href="ui-spinners.html">Spinners</a></li>
+                                <li><a href="ui-toasts.html">Toasts</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Advanced UI -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-buffer"></i>
+                                <span>Advanced UI</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="advanced-rangeslider.html">Range Slider</a></li>
+                                <li><a href="advanced-sweetalerts.html">Sweet Alert</a></li>
+                                <li><a href="advanced-nestable.html">Nestable List</a></li>
+                                <li><a href="advanced-ratings.html">Ratings</a></li>
+                                <li><a href="advanced-highlight.html">Highlight</a></li>
+                                <li><a href="advanced-clipboard.html">Clipboard</a></li>
+                                <li><a href="advanced-lightbox.html">Lightbox</a></li>
+                                <li><a href="advanced-session.html">Session Timeout</a></li>
+                                <li><a href="advanced-scrollbars.html">Scrollbars</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Forms -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect">
+                                <i class="mdi mdi-clipboard-outline"></i>
+                                <span class="badge bg-info float-end">8</span>
+                                <span>Forms</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="forms-elements.html">Form Elements</a></li>
+                                <li><a href="forms-advanced.html">Form Advanced</a></li>
+                                <li><a href="forms-validation.html">Form Validation</a></li>
+                                <li><a href="forms-wizard.html">Form Wizard</a></li>
+                                <li><a href="forms-editors.html">Form Editor</a></li>
+                                <li><a href="forms-repeater.html">Form Repeater</a></li>
+                                <li><a href="forms-x-editable.html">Form Xeditable</a></li>
+                                <li><a href="forms-uploads.html">Form File Upload</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Charts -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-chart-arc"></i>
+                                <span>Charts</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="charts-morris.html">Morris Chart</a></li>
+                                <li><a href="charts-chartist.html">Chartist Chart</a></li>
+                                <li><a href="charts-flot.html">Flot Chart</a></li>
+                                <li><a href="charts-peity.html">Peity Chart</a></li>
+                                <li><a href="charts-chartjs.html">Chartjs Chart</a></li>
+                                <li><a href="charts-sparkline.html">Sparkline Chart</a></li>
+                                <li><a href="charts-knob.html">Jquery Knob Chart</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Table -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-format-list-bulleted-type"></i>
+                                <span>Tables</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="tables-basic.html">Basic</a></li>
+                                <li><a href="tables-datatable.html">Datatable</a></li>
+                                <li><a href="tables-responsive.html">Responsive</a></li>
+                                <li><a href="tables-editable.html">Editable</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Icons -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-album"></i>
+                                <span>Icons</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="icons-materialdesign.html">Material Design</a></li>
+                                <li><a href="icons-dripicons.html">Dripicons</a></li>
+                                <li><a href="icons-fontawesome.html">Font Awesome</a></li>
+                                <li><a href="icons-themify.html">Themify</a></li>
+                                <li><a href="icons-typicons.html">Typicons</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-title">More</li>
+
+
+                        <!-- Layouts -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-cellphone-link"></i>
+                                <span>Layouts</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="javascript: void(0);" class="has-arrow">Vertical</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a href="layouts-compact-sidebar.html">Compact Sidebar</a></li>
+                                        <li><a href="layouts-dark-sidebar.html">Dark Sidebar</a></li>
+                                        <li><a href="layouts-icon-sidebar.html">Icon Sidebar</a></li>
+                                        <li><a href="layouts-colored-sidebar.html">Colored Sidebar</a></li>
+                                        <li><a href="layouts-boxed.html">Boxed Layout</a></li>
+                                        <li><a href="layouts-preloader.html">Preloader</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="javascript: void(0);" class="has-arrow">Horizontal</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a href="layouts-horizontal.html">Horizontal</a></li>
+                                        <li><a href="layouts-hori-topbar-light.html">Topbar Light</a></li>
+                                        <li><a href="layouts-hori-boxed.html">Boxed Layout</a></li>
+                                        <li><a href="layouts-hori-preloader.html">Preloader</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <!-- Maps -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-map"></i>
+                                <span>Maps</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="maps-google.html">Google Maps</a></li>
+                                <li><a href="maps-vector.html">Vector Maps</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Authentication -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-account-box"></i>
+                                <span>Authentication</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="auth-login.html">Login</a></li>
+                                <li><a href="auth-register.html">Register</a></li>
+                                <li><a href="auth-recoverpw.html">Recover Password</a></li>
+                                <li><a href="auth-lock-screen.html">Lock Screen</a></li>
+                                <li><a href="auth-404.html">Error 404</a></li>
+                                <li><a href="auth-500.html">Error 500</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Pages -->
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect">
+                                <i class="mdi mdi-checkbox-multiple-blank-outline"></i>
+                                <span class="badge bg-success float-end">Hot</span>
+                                <span>Pages</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="page-tour.html">Tour</a></li>
+                                <li><a href="page-timeline.html">Timeline</a></li>
+                                <li><a href="page-invoice.html">Invoice</a></li>
+                                <li><a href="page-treeview.html">Treeview</a></li>
+                                <li><a href="page-profile.html">Profile</a></li>
+                                <li><a href="page-starter.html">Starter Page</a></li>
+                                <li><a href="page-pricing.html">Pricing</a></li>
+                                <li><a href="page-faq.html">FAQs</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Email -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-card-account-details"></i>
+                                <span>Email Templates</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="email-templates-basic.html">Basic Action Email</a></li>
+                                <li><a href="email-templates-alert.html">Alert Email</a></li>
+                                <li><a href="email-templates-billing.html">Billing Email</a></li>
+                            </ul>
+                        </li>
+
+
+                        <!-- Multi Level -->
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                <i class="mdi mdi-share-variant"></i>
+                                <span>Multi Level</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="true">
+                                <li><a href="javascript: void(0);">Level 1.1</a></li>
+                                <li><a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
+                                    <ul class="sub-menu" aria-expanded="true">
+                                        <li><a href="javascript: void(0);">Level 2.1</a></li>
+                                        <li><a href="javascript: void(0);">Level 2.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0 font-size-18">Dripicons</h4>
+
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Amezia</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Icons</a></li>
+                                            <li class="breadcrumb-item active">Dripicons</li>
+                                        </ol>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+    
+                                        <h4 class="card-title">Examples</h4>
+                                        <p class="card-title-desc mb-2">Use <code>&lt;i
+                                                class="dripicons-alarm"&gt;&lt;/i&gt;</code>.
+                                        </p>
+    
+                                        <div class="row icon-demo-content">
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-alarm"></i> dripicons-alarm
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-align-center"></i> dripicons-align-center
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-align-justify"></i> dripicons-align-justify
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-align-left"></i> dripicons-align-left
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-align-right"></i> dripicons-align-right
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-anchor"></i> dripicons-anchor
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-archive"></i> dripicons-archive
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-down"></i> dripicons-arrow-down
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-left"></i> dripicons-arrow-left
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-right"></i> dripicons-arrow-right
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-thin-down"></i> dripicons-arrow-thin-down
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-thin-left"></i> dripicons-arrow-thin-left
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-thin-right"></i> dripicons-arrow-thin-right
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-thin-up"></i> dripicons-arrow-thin-up
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-arrow-up"></i> dripicons-arrow-up
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class=" dripicons-article"></i> dripicons-article
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-backspace"></i> dripicons-backspace
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-basket"></i> dripicons-basket
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-basketball"></i> dripicons-basketball
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-battery-empty"></i> dripicons-battery-empty
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-battery-full"></i> dripicons-battery-full
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-battery-low"></i> dripicons-battery-low
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-battery-medium"></i> dripicons-battery-medium
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-bell"></i> dripicons-bell
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-blog"></i> dripicons-blog
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-bluetooth"></i> dripicons-bluetooth
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-bold"></i> dripicons-bold
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-bookmark"></i> dripicons-bookmark
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-bookmarks"></i> dripicons-bookmarks
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-box"></i> dripicons-box
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-briefcase"></i> dripicons-briefcase
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-brightness-low"></i> dripicons-brightness-low
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-brightness-max"></i> dripicons-brightness-max
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-brightness-medium"></i> dripicons-brightness-medium
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-broadcast"></i> dripicons-broadcast
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-browser"></i> dripicons-browser
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-browser-upload"></i> dripicons-browser-upload
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-brush"></i> dripicons-brush
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-calendar"></i> dripicons-calendar
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-camcorder"></i> dripicons-camcorder
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-camera"></i> dripicons-camera
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-card"></i> dripicons-card
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-cart"></i> dripicons-cart
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-checklist"></i> dripicons-checklist
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-checkmark"></i> dripicons-checkmark
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-chevron-down"></i> dripicons-chevron-down
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-chevron-left"></i> dripicons-chevron-left
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-chevron-right"></i> dripicons-chevron-right
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-chevron-up"></i> dripicons-chevron-up
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-clipboard"></i> dripicons-clipboard
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-clock"></i> dripicons-clock
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-clockwise"></i> dripicons-clockwise
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-cloud"></i> dripicons-cloud
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-cloud-download"></i> dripicons-cloud-download
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-cloud-upload"></i> dripicons-cloud-upload
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-code"></i> dripicons-code
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-contract"></i> dripicons-contract
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-contract-2"></i> dripicons-contract-2
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-conversation"></i> dripicons-conversation
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-copy"></i> dripicons-copy
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-crop"></i> dripicons-crop
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-cross"></i> dripicons-cross
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-crosshair"></i> dripicons-crosshair
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-cutlery"></i> dripicons-cutlery
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-device-desktop"></i> dripicons-device-desktop
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-device-mobile"></i> dripicons-device-mobile
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-device-tablet"></i> dripicons-device-tablet
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-direction"></i> dripicons-direction
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-disc"></i> dripicons-disc
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-document"></i> dripicons-document
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-document-delete"></i> dripicons-document-delete
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-document-edit"></i> dripicons-document-edit
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-document-new"></i> dripicons-document-new
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-document-remove"></i> dripicons-document-remove
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-dot"></i> dripicons-dot
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-dots-2"></i> dripicons-dots-2
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-dots-3"></i> dripicons-dots-3
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-download"></i> dripicons-download
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-duplicate"></i> dripicons-duplicate
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-enter"></i> dripicons-enter
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-exit"></i> dripicons-exit
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-expand"></i> dripicons-expand
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-expand-2"></i> dripicons-expand-2
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-experiment"></i> dripicons-experiment
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-export"></i> dripicons-export
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-feed"></i> dripicons-feed
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-flag"></i> dripicons-flag
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-flashlight"></i> dripicons-flashlight
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-folder"></i> dripicons-folder
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-folder-open"></i> dripicons-folder-open
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-forward"></i> dripicons-forward
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-gaming"></i> dripicons-gaming
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-gear"></i> dripicons-gear
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-graduation"></i> dripicons-graduation
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-graph-bar"></i> dripicons-graph-bar
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-graph-line"></i> dripicons-graph-line
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-graph-pie"></i> dripicons-graph-pie
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-headset"></i> dripicons-headset
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-heart"></i> dripicons-heart
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-help"></i> dripicons-help
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-home"></i> dripicons-home
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-hourglass"></i> dripicons-hourglass
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-inbox"></i> dripicons-inbox
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-information"></i> dripicons-information
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-italic"></i> dripicons-italic
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-jewel"></i> dripicons-jewel
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-lifting"></i> dripicons-lifting
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-lightbulb"></i> dripicons-lightbulb
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-link"></i> dripicons-link
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-link-broken"></i> dripicons-link-broken
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-list"></i> dripicons-list
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-loading"></i> dripicons-loading
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-location"></i> dripicons-location
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-lock"></i> dripicons-lock
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-lock-open"></i> dripicons-lock-open
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-mail"></i> dripicons-mail
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-map"></i> dripicons-map
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-loop"></i> dripicons-media-loop
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-next"></i> dripicons-media-next
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-pause"></i> dripicons-media-pause
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-play"></i> dripicons-media-play
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-previous"></i> dripicons-media-previous
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-record"></i> dripicons-media-record
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-shuffle"></i> dripicons-media-shuffle
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-media-stop"></i> dripicons-media-stop
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-medical"></i> dripicons-medical
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-menu"></i> dripicons-menu
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-message"></i> dripicons-message
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-meter"></i> dripicons-meter
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-microphone"></i> dripicons-microphone
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-minus"></i> dripicons-minus
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-monitor"></i> dripicons-monitor
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-move"></i> dripicons-move
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-music"></i> dripicons-music
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-network-1"></i> dripicons-network-1
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-network-2"></i> dripicons-network-2
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-network-3"></i> dripicons-network-3
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-network-4"></i> dripicons-network-4
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-network-5"></i> dripicons-network-5
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-pamphlet"></i> dripicons-pamphlet
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-paperclip"></i> dripicons-paperclip
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-pencil"></i> dripicons-pencil
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-phone"></i> dripicons-phone
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-photo"></i> dripicons-photo
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-photo-group"></i> dripicons-photo-group
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-pill"></i> dripicons-pill
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-pin"></i> dripicons-pin
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-plus"></i> dripicons-plus
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-power"></i> dripicons-power
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-preview"></i> dripicons-preview
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-print"></i> dripicons-print
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-pulse"></i> dripicons-pulse
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-question"></i> dripicons-question
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-reply"></i> dripicons-reply
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-reply-all"></i> dripicons-reply-all
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-return"></i> dripicons-return
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-retweet"></i> dripicons-retweet
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-rocket"></i> dripicons-rocket
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-scale"></i> dripicons-scale
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-search"></i> dripicons-search
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-shopping-bag"></i> dripicons-shopping-bag
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-skip"></i> dripicons-skip
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-stack"></i> dripicons-stack
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-star"></i> dripicons-star
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-stopwatch"></i> dripicons-stopwatch
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-store"></i> dripicons-store
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-suitcase"></i> dripicons-suitcase
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-swap"></i> dripicons-swap
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-tag"></i> dripicons-tag
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-tag-delete"></i> dripicons-tag-delete
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-tags"></i> dripicons-tags
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-thumbs-down"></i> dripicons-thumbs-down
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-thumbs-up"></i> dripicons-thumbs-up
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-ticket"></i> dripicons-ticket
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-time-reverse"></i> dripicons-time-reverse
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-to-do"></i> dripicons-to-do
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-toggles"></i> dripicons-toggles
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-trash"></i> dripicons-trash
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-trophy"></i> dripicons-trophy
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-upload"></i> dripicons-upload
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-user"></i> dripicons-user
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-user-group"></i> dripicons-user-group
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-user-id"></i> dripicons-user-id
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-vibrate"></i> dripicons-vibrate
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-view-apps"></i> dripicons-view-apps
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-view-list"></i> dripicons-view-list
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-view-list-large"></i> dripicons-view-list-large
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-view-thumb"></i> dripicons-view-thumb
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-volume-full"></i> dripicons-volume-full
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-volume-low"></i> dripicons-volume-low
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-volume-medium"></i> dripicons-volume-medium
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-volume-off"></i> dripicons-volume-off
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-wallet"></i> dripicons-wallet
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-warning"></i> dripicons-warning
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-web"></i> dripicons-web
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-weight"></i> dripicons-weight
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-wifi"></i> dripicons-wifi
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-wrong"></i> dripicons-wrong
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-zoom-in"></i> dripicons-zoom-in
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                                <i class="dripicons-zoom-out"></i> dripicons-zoom-out
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+                        
+                    </div> <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+
+                
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © Amezia.
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="text-sm-end d-none d-sm-block">
+                                    Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title px-3 py-4">
+                    <a href="javascript:void(0);" class="right-bar-toggle float-end">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                    <h5 class="m-0">Settings</h5>
+                </div>
+
+                <!-- Settings -->
+                <hr />
+                <h6 class="text-center mb-0">Choose Layouts</h6>
+
+                <div class="p-4">
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-1.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+                        <label class="custom-control-label" for="light-mode-switch">Light Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-2.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch"
+                            data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css" />
+                        <label class="custom-control-label" for="dark-mode-switch">Dark Mode</label>
+                    </div>
+
+                    <div class="mb-2">
+                        <img src="assets/images/layouts/layout-3.jpg" class="img-fluid img-thumbnail" alt="">
+                    </div>
+                    <div class="form-check form-switch mb-5">
+                        <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch"
+                            data-appStyle="assets/css/app-rtl.min.css" />
+                        <label class="custom-control-label" for="rtl-mode-switch">RTL Mode</label>
+                    </div>
+
+
+                </div>
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+        <script src="assets/js/app.js"></script>
+
+    </body>
+</html>

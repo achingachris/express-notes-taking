@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Premium Multipurpose Admin & Dashboard Template"
+      name="description"
+    />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+    <!--Chartist Chart CSS -->
+    <link
+      href="assets/libs/chartist/chartist.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- plugin css -->
+    <link
+      href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- DataTables -->
+    <link
+      href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Bootstrap Css -->
+    <link
+      href="assets/css/bootstrap.min.css"
+      id="bootstrap-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link
+      href="assets/css/app.min.css"
+      id="app-style"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body data-topbar="dark">
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+      <header id="page-topbar">
+        <div class="navbar-header">
+          <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+              <a href="index.html" class="logo logo-dark">
+                <span class="logo-sm">
+                  <img src="./logo.png" alt="" height="22" />
+                </span>
+                <span class="logo-lg">
+                  <img src="./logo.png" alt="" height="17" />
+                </span>
+              </a>
+
+              <a href="index.html" class="logo logo-light">
+                <span class="logo-sm">
+                  <img src="./logo.png" alt="" height="22" />
+                </span>
+                <span class="logo-lg">
+                  <img src="./logo.png" alt="" height="17" />
+                </span>
+              </a>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-sm px-3 font-size-24 header-item waves-effect"
+              id="vertical-menu-btn"
+            >
+              <i class="mdi mdi-menu"></i>
+            </button>
+
+            <div class="d-none d-lg-inline-block">
+              <button
+                type="button"
+                class="btn header-item noti-icon waves-effect"
+                data-bs-target="#search-wrap"
+              >
+                <i class="mdi mdi-airplane me-2 font-size-16"></i>Landing
+              </button>
+            </div>
+          </div>
+
+          <!-- Search input -->
+          <div class="search-wrap" id="search-wrap">
+            <div class="search-bar">
+              <input class="search-input form-control" placeholder="Search" />
+              <a
+                href="#"
+                class="close-search toggle-search"
+                data-target="#search-wrap"
+              >
+                <i class="mdi mdi-close-circle"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <!-- Notification -->
+            <div class="dropdown d-inline-block">
+              <button
+                type="button"
+                class="btn header-item noti-icon waves-effect notification-step"
+                id="page-header-notifications-dropdown"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="badge bg-danger rounded-pill">2</span>
+              </button>
+              <div
+                class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                aria-labelledby="page-header-notifications-dropdown"
+              >
+                <div class="p-3">
+                  <h6 class="m-0">Notifications (258)</h6>
+                </div>
+
+                <div data-simplebar style="max-height: 230px">
+                  <a href="" class="text-reset notification-item">
+                    <div class="d-flex align-items-start">
+                      <div class="avatar-xs me-3">
+                        <span
+                          class="avatar-title bg-primary rounded-circle font-size-16"
+                        >
+                          <i class="mdi mdi-cart-outline"></i>
+                        </span>
+                      </div>
+                      <div class="flex-1">
+                        <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                        <div class="text-muted">
+                          <p class="mb-1 font-size-12">
+                            Dummy text of the printing and typesetting industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="" class="text-reset notification-item">
+                    <div class="d-flex align-items-start">
+                      <div class="avatar-xs me-3">
+                        <span
+                          class="avatar-title bg-warning rounded-circle font-size-16"
+                        >
+                          <i class="mdi mdi-message"></i>
+                        </span>
+                      </div>
+                      <div class="flex-1">
+                        <h6 class="mb-1 font-size-15">New Message received</h6>
+                        <div class="text-muted">
+                          <p class="mb-1 font-size-12">
+                            You have 87 unread messages
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="" class="text-reset notification-item">
+                    <div class="d-flex align-items-start">
+                      <div class="avatar-xs me-3">
+                        <span
+                          class="avatar-title bg-info rounded-circle font-size-16"
+                        >
+                          <i class="mdi mdi-help"></i>
+                        </span>
+                      </div>
+                      <div class="flex-1">
+                        <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                        <div class="text-muted">
+                          <p class="mb-1 font-size-12">
+                            It is a long established fact that a reader will
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="" class="text-reset notification-item">
+                    <div class="d-flex align-items-start">
+                      <div class="avatar-xs me-3">
+                        <span
+                          class="avatar-title bg-primary rounded-circle font-size-16"
+                        >
+                          <i class="mdi mdi-cart-outline"></i>
+                        </span>
+                      </div>
+                      <div class="flex-1">
+                        <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                        <div class="text-muted">
+                          <p class="mb-1 font-size-12">
+                            Dummy text of the printing and typesetting industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="" class="text-reset notification-item">
+                    <div class="d-flex align-items-start">
+                      <div class="avatar-xs me-3">
+                        <span
+                          class="avatar-title bg-danger rounded-circle font-size-16"
+                        >
+                          <i class="mdi mdi-cart-outline"></i>
+                        </span>
+                      </div>
+                      <div class="flex-1">
+                        <h6 class="mb-1 font-size-15">Your order is placed</h6>
+                        <div class="text-muted">
+                          <p class="mb-1 font-size-12">
+                            Dummy text of the printing and typesetting industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="p-2 border-top d-grid">
+                  <a
+                    class="btn btn-sm btn-link font-size-14 btn-block text-center"
+                    href="javascript:void(0)"
+                  >
+                    <i class="mdi mdi-arrow-right-circle me-1"></i> View all
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- full-screen -->
+            <div class="dropdown d-none d-lg-inline-block ms-1">
+              <button
+                type="button"
+                class="btn header-item noti-icon waves-effect"
+                data-toggle="fullscreen"
+              >
+                <i class="mdi mdi-fullscreen"></i>
+              </button>
+            </div>
+
+            <!-- User -->
+            <div class="dropdown d-inline-block">
+              <button
+                type="button"
+                class="btn header-item waves-effect user-step"
+                id="page-header-user-dropdown"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="rounded-circle header-profile-user"
+                  src="assets/images/users/user-1.jpg"
+                  alt="Header Avatar"
+                />
+                <span class="d-none d-xl-inline-block ms-1">Admin User</span>
+                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+              </button>
+              <div class="dropdown-menu dropdown-menu-end">
+                <!-- item-->
+                <a class="dropdown-item" href="#"
+                  ><i class="dripicons-user d-inline-block text-muted me-2"></i>
+                  Profile</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i
+                    class="dripicons-wallet d-inline-block text-muted me-2"
+                  ></i>
+                  My Wallet</a
+                >
+                <a class="dropdown-item d-block" href="#"
+                  ><i class="dripicons-gear d-inline-block text-muted me-2"></i>
+                  Settings</a
+                >
+                <a class="dropdown-item" href="#"
+                  ><i class="dripicons-lock d-inline-block text-muted me-2"></i>
+                  Lock screen</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"
+                  ><i class="dripicons-exit d-inline-block text-muted me-2"></i>
+                  Logout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ========== Left Sidebar Start ========== -->
+      <div class="vertical-menu">
+        <div data-simplebar class="h-100">
+          <!--- Sidemenu -->
+          <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+              <li class="menu-title">Admin Dashboard</li>
+              <li><a href="admin-dash.html">Dashboard</a></li>
+              <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                  <span>Users</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li><a href="admin-clients.html">Clients</a></li>
+                  <li><a href="admin-transporters.html">Transporters</a></li>
+                </ul>
+              </li>
+
+              <li class="menu-title">Admin Actions</li>
+              <!-- UI Elements -->
+
+              <li>
+                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                  <span>Cargo</span>
+                </a>
+                <ul class="sub-menu" aria-expanded="false">
+                  <li><a href="admin-cargo.html">All Cargo</a></li>
+                  <li>
+                    <a href="admin-approved-cargo.html">Approved Cargo</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Sidebar -->
+        </div>
+      </div>
+      <!-- Left Sidebar End -->
+
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+        <div class="page-content">
+          <div class="container-fluid">
+            <!-- start page title -->
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="page-title-box d-flex align-items-center justify-content-between"
+                >
+                  <h4 class="mb-0 font-size-18">Admin</h4>
+                  <div class="page-title-right">
+                    <ol class="breadcrumb m-0">
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Kago</a>
+                      </li>
+                      <li class="breadcrumb-item">
+                        <a href="javascript: void(0);">Admin</a>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+              <div class="col-sm-6 col-xl-3">
+                <div class="card card-content">
+                  <div class="card-body row justify-content-center">
+                    <div class="col-5 align-self-center">
+                      <h4 class="mb-2 font-size-20">500</h4>
+                      <p class="mb-2 text-muted font-size-13 text-nowrap">
+                        Clients
+                      </p>
+                      <span
+                        class="badge bg-soft-success text-success mt-1 shadow-none"
+                        ><i class="mdi mdi-menu-up font-size-16"></i
+                        >20.15%</span
+                      >
+                    </div>
+                    <div class="col-7 align-self-center">
+                      <span
+                        class="peity-line"
+                        data-width="100%"
+                        data-peity='{ "fill": ["#b5f1e0"],"stroke": ["#0acf97"]}'
+                        data-height="80"
+                        >1,2,3,4,3,6,3,5,3,3,4,2</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-sm-6 col-xl-3">
+                <div class="card card-content">
+                  <div class="card-body row justify-content-center">
+                    <div class="col-5 align-self-center">
+                      <h4 class="mb-2 font-size-20">320</h4>
+                      <p class="mb-2 text-muted font-size-13 text-nowrap">
+                        Transporters
+                      </p>
+                      <span
+                        class="badge bg-soft-success text-success mt-1 shadow-none"
+                        ><i class="mdi mdi-menu-up font-size-16"></i>7.15%</span
+                      >
+                    </div>
+                    <div class="col-7 align-self-center text-end">
+                      <span
+                        class="peity-line"
+                        data-width="100%"
+                        data-peity='{ "fill": ["#d6d8f5"],"stroke": ["#777edd"]}'
+                        data-height="80"
+                        >0,3,6,3,4,2,6,1,8,4,4,2</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-sm-6 col-xl-3">
+                <div class="card card-content">
+                  <div class="card-body row justify-content-center">
+                    <div class="col-5 align-self-center">
+                      <h4 class="mb-2 font-size-20">40</h4>
+                      <p class="mb-2 text-muted font-size-13 text-nowrap">
+                        New Cargo
+                      </p>
+                      <span
+                        class="badge bg-soft-danger text-danger mt-1 shadow-none"
+                        ><i class="mdi mdi-menu-down font-size-16"></i
+                        >6.05%</span
+                      >
+                    </div>
+                    <div class="col-7 align-self-center">
+                      <span
+                        class="peity-line"
+                        data-width="100%"
+                        data-peity='{ "fill": ["#fdebb5"],"stroke": ["#f9bc0b"]}'
+                        data-height="80"
+                        >2,4,7,3,5,3,6,3,4,3,2,1,2</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-sm-6 col-xl-3">
+                <div class="card card-content">
+                  <div class="card-body row justify-content-center">
+                    <div class="col-5 align-self-center">
+                      <h4 class="mb-2 font-size-20">2501</h4>
+                      <p class="mb-2 text-muted font-size-13 text-nowrap">
+                        Total Trips
+                      </p>
+                      <span
+                        class="badge bg-soft-success text-success mt-1 shadow-none"
+                        ><i class="mdi mdi-menu-up font-size-16"></i>8.97%</span
+                      >
+                    </div>
+                    <div class="col-7 align-self-center">
+                      <span
+                        class="peity-bar"
+                        data-peity='{ "fill": ["#ffd1e1", "#ffd1e1"]}'
+                        data-width="100%"
+                        data-height="80"
+                        >5,6,2,8,9,4,7,10,11,12,10,4,7,10</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h5>Overview</h5>
+                    <div class="row">
+                      <div class="col-lg-9 border-right">
+                        <div class="card shadow-none mb-0">
+                          <div class="card-body">
+                            <div
+                              id="morris-line-chart"
+                              class="morris-charts overview-chart"
+                              dir="ltr"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- end col -->
+
+                      <div class="col-lg-3">
+                        <div class="card mb-0 overview shadow-none">
+                          <div class="card-body border-bottom">
+                            <div class="">
+                              <div class="row align-items-center">
+                                <div class="col-4">
+                                  <div class="overview-content">
+                                    <i
+                                      class="mdi mdi-share-variant text-success"
+                                    ></i>
+                                  </div>
+                                </div>
+                                <div class="col-8 text-end">
+                                  <p class="text-muted font-size-13 mb-1">
+                                    Routes
+                                  </p>
+                                  <h4 class="mb-0 font-size-20">503</h4>
+                                </div>
+                              </div>
+                              <!-- end row -->
+                            </div>
+                          </div>
+                          <div class="card-body border-bottom">
+                            <div class="">
+                              <div class="row align-items-center">
+                                <div class="col-4">
+                                  <div class="overview-content">
+                                    <i
+                                      class="mdi mdi-gesture-double-tap text-purple"
+                                    ></i>
+                                  </div>
+                                </div>
+                                <div class="col-8 text-end">
+                                  <p class="text-muted font-size-13 mb-1">
+                                    Clicks
+                                  </p>
+                                  <h4 class="mb-0 font-size-20">3,503</h4>
+                                </div>
+                              </div>
+                              <!-- end row -->
+                            </div>
+                          </div>
+                          <div class="card-body border-bottom">
+                            <div class="">
+                              <div class="row align-items-center">
+                                <div class="col-4">
+                                  <div class="overview-content">
+                                    <i class="mdi mdi-earth text-warning"></i>
+                                  </div>
+                                </div>
+                                <div class="col-8 text-end">
+                                  <p class="text-muted font-size-13 mb-1">
+                                    Countries
+                                  </p>
+                                  <h4 class="mb-0 font-size-20">51</h4>
+                                </div>
+                              </div>
+                              <!-- end row -->
+                            </div>
+                          </div>
+                          <div class="card-body">
+                            <div class="">
+                              <div class="row align-items-center">
+                                <div class="col-4">
+                                  <div class="overview-content">
+                                    <i
+                                      class="mdi mdi-access-point text-pink"
+                                    ></i>
+                                  </div>
+                                </div>
+                                <div class="col-8 text-end">
+                                  <p class="text-muted font-size-13 mb-1">
+                                    Virality
+                                  </p>
+                                  <h4 class="mb-0 font-size-20">4.55%</h4>
+                                </div>
+                                <div class="col-12">
+                                  <div
+                                    class="progress mt-4"
+                                    style="height: 6px"
+                                  >
+                                    <div
+                                      class="progress-bar progress-animated bg-pink"
+                                      role="progressbar"
+                                      style="max-width: 85%; border-radius: 5px"
+                                      aria-valuenow="85"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- end row -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end row-->
+
+            <!--end row-->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="pb-3">Recent Cargo</h5>
+                    <div class="table-responsive">
+                      <table id="datatable" class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Client</th>
+                            <th>Routes</th>
+                            <th>Status</th>
+                            <th>Date Added</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <!-- random data -->
+
+                          <tr>
+                            <td>Client 1</td>
+                            <td>Kigali - Arusha</td>
+                            <td>Approved</td>
+                            <td>2/05/2023</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Quick Action<i
+                                    class="mdi mdi-chevron-down"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#">Reject</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <!-- repeat rows with random data from the first row -->
+                          <tr>
+                            <td>Client 2</td>
+                            <td>Kampala - Nairobi</td>
+                            <td>Pending</td>
+                            <td>3/12/2023</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Quick Action<i
+                                    class="mdi mdi-chevron-down"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#">Reject</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Client 3</td>
+                            <td>Dar es Salaam - Mombasa</td>
+                            <td>Rejected</td>
+                            <td>4/28/2023</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Quick Action<i
+                                    class="mdi mdi-chevron-down"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#">Approve</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Client 4</td>
+                            <td>Lagos - Accra</td>
+                            <td>Approved</td>
+                            <td>5/16/2023</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Quick Action<i
+                                    class="mdi mdi-chevron-down"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#">Reject</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>Client 5</td>
+                            <td>Abuja - Douala</td>
+                            <td>Pending</td>
+                            <td>6/02/2023</td>
+                            <td>
+                              <div class="dropdown">
+                                <button
+                                  class="btn btn-primary dropdown-toggle"
+                                  type="button"
+                                  id="dropdownMenuButton"
+                                  data-bs-toggle="dropdown"
+                                  aria-haspopup="true"
+                                  aria-expanded="false"
+                                >
+                                  Quick Action<i
+                                    class="mdi mdi-chevron-down"
+                                  ></i>
+                                </button>
+                                <div
+                                  class="dropdown-menu"
+                                  aria-labelledby="dropdownMenuButton"
+                                >
+                                  <a class="dropdown-item" href="#">View</a>
+                                  <a class="dropdown-item" href="#">Reject</a>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- end table -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>
+                © Amezia.
+              </div>
+              <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                  Crafted with <i class="mdi mdi-heart text-danger"></i> by
+                  Themesbrand
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- Plugin Js-->
+    <script src="assets/libs/chartist/chartist.min.js"></script>
+    <script src="assets/libs/chartist-plugin-tooltips/chartist-plugin-tooltip.min.js"></script>
+    <script src="assets/libs/morris.js/morris.min.js"></script>
+    <script src="assets/libs/raphael/raphael.min.js"></script>
+    <!-- Peity chart-->
+    <script src="assets/libs/peity/jquery.peity.min.js"></script>
+
+    <!-- Plugins js-->
+    <script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+    <script src="assets/js/pages/dashboard2.init.js"></script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
