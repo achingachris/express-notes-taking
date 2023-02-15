@@ -1,8 +1,7 @@
+import Client from '@/layout/client/Client'
 
 const CargoDetails = () => {
-  return (
-    <div>CargoDetails</div>
-  )
+  return <Client>CargoDetails</Client>
 }
 
 export default CargoDetails
