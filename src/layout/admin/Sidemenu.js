@@ -23,6 +23,16 @@ const Sidemenu = () => {
                 </a>
               </Link>
             </li>
+
+            <li className='menu-title'>Finances</li>
+
+            <li>
+              <Link href='/admin/invoice' legacyBehavior>
+                <a className=' waves-effect'>
+                  <span>Invoice</span>
+                </a>
+              </Link>
+            </li>
           </ul>
         </div>
         {/* Sidebar */}

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const Header = () => {
   return (
     <header id='page-topbar'>
@@ -7,18 +9,38 @@ const Header = () => {
           <div className='navbar-brand-box'>
             <a href='index.html' className='logo logo-dark'>
               <span className='logo-sm'>
-                <img src='assets/images/logo-sm.png' alt='' height={22} />
+                <Image
+                  src='/assets/images/logo-sm.png'
+                  alt=''
+                  height={22}
+                  width={50}
+                />
               </span>
               <span className='logo-lg'>
-                <img src='assets/images/logo-dark.png' alt='' height={17} />
+                <Image
+                  src='/assets/images/logo-dark.png'
+                  alt=''
+                  height={17}
+                  width={50}
+                />
               </span>
             </a>
             <a href='index.html' className='logo logo-light'>
               <span className='logo-sm'>
-                <img src='assets/images/logo-sm.png' alt='' height={22} />
+                <Image
+                  src='/assets/images/logo-sm.png'
+                  alt=''
+                  height={22}
+                  width={250}
+                />
               </span>
               <span className='logo-lg'>
-                <img src='assets/images/logo-light.png' alt='' height={17} />
+                <Image
+                  src='/assets/images/logo-light.png'
+                  alt=''
+                  height={17}
+                  width={50}
+                />
               </span>
             </a>
           </div>
@@ -126,90 +148,7 @@ const Header = () => {
               </form>
             </div>
           </div>
-          <div className='dropdown d-none d-md-block'>
-            <button
-              type='button'
-              className='btn header-item waves-effect'
-              data-bs-toggle='dropdown'
-              aria-haspopup='true'
-              aria-expanded='false'
-            >
-              <img
-                className='me-2'
-                src='assets/images/flags/us.jpg'
-                alt='Header Language'
-                height={16}
-              />{' '}
-              English <span className='mdi mdi-chevron-down'> </span>
-            </button>
-            <div className='dropdown-menu dropdown-menu-end'>
-              {/* item*/}
-              <a
-                href='javascript:void(0);'
-                className='dropdown-item notify-item'
-              >
-                <img
-                  src='assets/images/flags/germany.jpg'
-                  alt='user-image'
-                  className='me-1'
-                  height={12}
-                />{' '}
-                <span className='align-middle'> German </span>
-              </a>
-              {/* item*/}
-              <a
-                href='javascript:void(0);'
-                className='dropdown-item notify-item'
-              >
-                <img
-                  src='assets/images/flags/italy.jpg'
-                  alt='user-image'
-                  className='me-1'
-                  height={12}
-                />{' '}
-                <span className='align-middle'> Italian </span>
-              </a>
-              {/* item*/}
-              <a
-                href='javascript:void(0);'
-                className='dropdown-item notify-item'
-              >
-                <img
-                  src='assets/images/flags/french.jpg'
-                  alt='user-image'
-                  className='me-1'
-                  height={12}
-                />{' '}
-                <span className='align-middle'> French </span>
-              </a>
-              {/* item*/}
-              <a
-                href='javascript:void(0);'
-                className='dropdown-item notify-item'
-              >
-                <img
-                  src='assets/images/flags/spain.jpg'
-                  alt='user-image'
-                  className='me-1'
-                  height={12}
-                />{' '}
-                <span className='align-middle'> Spanish </span>
-              </a>
-              {/* item*/}
-              <a
-                href='javascript:void(0);'
-                className='dropdown-item notify-item'
-              >
-                <img
-                  src='assets/images/flags/russia.jpg'
-                  alt='user-image'
-                  className='me-1'
-                  height={12}
-                />{' '}
-                <span className='align-middle'> Russian </span>
-              </a>
-            </div>
-          </div>
+         
           {/* Notification */}
           <div className='dropdown d-inline-block'>
             <button
