@@ -276,9 +276,11 @@ const Header = () => {
               aria-haspopup='true'
               aria-expanded='false'
             >
-              <img
+              <Image
                 className='rounded-circle header-profile-user'
-                src='assets/images/users/user-1.jpg'
+                src='/assets/images/users/user-1.jpg'
+                width={50}
+                height={50}
                 alt='Header Avatar'
               />
               <span className='d-none d-xl-inline-block ms-1'>Amelia</span>
