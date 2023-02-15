@@ -241,12 +241,6 @@ const index = () => {
                       >
                         <i className='fa fa-print' />
                       </a>
-                      <a href='#' className='btn btn-primary'>
-                        Submit
-                      </a>
-                      <a href='#' className='btn btn-danger'>
-                        Cancel
-                      </a>
                     </div>
                   </div>
                   {/* end col */}
