@@ -1,7 +1,14 @@
-import Client from "@/layout/client/Client"
+import Client from '@/layout/client/Client'
+import TopCards from '@/components/Client/home/TopCards'
+import CargoList from '@/components/Client/home/CargoList'
 
 const index = () => {
-  return <Client>index</Client>
+  return (
+    <Client>
+      <TopCards />
+      <CargoList />
+    </Client>
+  )
 }
 
 export default index
