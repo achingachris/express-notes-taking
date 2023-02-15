@@ -1,1 +1,0 @@
-var toastElList=[].slice.call(document.querySelectorAll(".toast")),toastList=toastElList.map(function(t){return new bootstrap.Toast(t)});
