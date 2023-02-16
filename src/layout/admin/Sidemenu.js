@@ -16,13 +16,13 @@ const Sidemenu = () => {
                 </a>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href='/admin/cargo' legacyBehavior>
                 <a className=' waves-effect'>
                   <span>Cargo</span>
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href='/admin/cargo' legacyBehavior>
                 <a className=' waves-effect'>
@@ -33,17 +33,11 @@ const Sidemenu = () => {
             <li>
               <Link href='/auth/transporter/register' legacyBehavior>
                 <a className=' waves-effect'>
-                  <span>Transporter Registration</span>
+                  <span>Registration</span>
                 </a>
               </Link>
             </li>
-            <li>
-              <Link href='/auth/client/register' legacyBehavior>
-                <a className=' waves-effect'>
-                  <span>Client Registration</span>
-                </a>
-              </Link>
-            </li>
+            
 
             <li className='menu-title'>Finances</li>
 
