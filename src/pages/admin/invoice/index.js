@@ -29,7 +29,7 @@ const index = () => {
             <div className='card'>
               <div className='card-body'>
                 <div className='row'>
-                <div className='col-lg-6'>
+                  <div className='col-lg-6'>
                     <Image
                       src='/logo.png'
                       alt=''
@@ -62,9 +62,9 @@ const index = () => {
                         <br />
                         Ummar
                         <br />
-                        Dodoma, TRanzania
+                        Dodoma, Tanzania
                         <br />
-                        San Francisco, CA 94107
+                        Dodoma, Tanzania
                         <br />
                         <abbr title='Phone'>P:</abbr> (123) 456-7890
                       </address>
@@ -75,9 +75,9 @@ const index = () => {
                         <br />
                         Ummar
                         <br />
-                        Dodoma, TRanzania
+                        Dodoma, Tanzania
                         <br />
-                        San Francisco, CA 94107
+                        Dodoma, Tanzania
                         <br />
                         <abbr title='Phone'>P:</abbr> (123) 456-7890
                       </address>
@@ -89,12 +89,13 @@ const index = () => {
                 <div className='row'>
                   <div className='col-lg-12'>
                     <div className='table-responsive'>
-                    <table className='table table-bordered mb-0'>
+                      <table className='table table-bordered mb-0'>
                         <thead>
                           <tr>
                             <th>Quantity</th>
                             <th>Route</th>
                             <th>Cargo Weight</th>
+                            <th>VAT</th>
                             <th>Cost</th>
                           </tr>
                         </thead>
@@ -102,9 +103,8 @@ const index = () => {
                           <tr>
                             <th>1</th>
                             <td>Daresalaam - Dodoma</td>
-                            <td>
-                              50 Tons
-                            </td>
+                            <td>50 Tons</td>
+                            <td>0.00</td>
                             <td>$1000.00</td>
                           </tr>
                           <tr className='bg-dark text-light'>
