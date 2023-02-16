@@ -31,7 +31,7 @@ const Header = () => {
           >
             <i className='mdi mdi-menu' />
           </button>
-          <div className='d-none d-lg-inline-block'>
+          {/* <div className='d-none d-lg-inline-block'>
             <button
               type='button'
               className='btn header-item noti-icon waves-effect'
@@ -40,7 +40,7 @@ const Header = () => {
               <i className='mdi mdi-airplane me-2 font-size-16' />
               Landing
             </button>
-          </div>
+          </div> */}
         </div>
         {/* Search input */}
         <div className='search-wrap' id='search-wrap'>

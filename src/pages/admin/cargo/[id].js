@@ -119,7 +119,7 @@ const CargoDetails = () => {
           </div>
         </div>
 
-        <div className='col'>
+        {/* <div className='col'>
           <div className='card card-body'>
             <h4 className='card-title'>Delivery Details</h4>
             <p className='card-text text-muted font-size-13'>
@@ -139,7 +139,7 @@ const CargoDetails = () => {
               consectetur adipisicing elit. Quisquam, quod.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </Admin>
   )
