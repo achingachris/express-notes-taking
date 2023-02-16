@@ -33,7 +33,14 @@ const Sidemenu = () => {
             <li>
               <Link href='/auth/transporter/register' legacyBehavior>
                 <a className=' waves-effect'>
-                  <span>Registration</span>
+                  <span>Transporter Registration</span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/auth/client/register' legacyBehavior>
+                <a className=' waves-effect'>
+                  <span>Client Registration</span>
                 </a>
               </Link>
             </li>
