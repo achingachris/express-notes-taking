@@ -1,4 +1,5 @@
-// import CargoChart from './CargoChart'
+import CargoChart from './CargoChart'
+// import Image from 'next/image'
 
 const OverView = () => {
   return (
@@ -11,7 +12,8 @@ const OverView = () => {
               <div className='col-lg-9 border-right'>
                 <div className='card shadow-none mb-0 '>
                   <div className='card-body'>
-                    {/* <CargoChart /> */}
+                    <CargoChart />
+                    {/* <Image src='/graph.png' width='200' height='200' alt='' /> */}
                   </div>
                 </div>
               </div>

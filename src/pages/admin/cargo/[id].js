@@ -91,40 +91,36 @@ const CargoDetails = () => {
 
       {/* cargo details */}
       <div className='row'>
-        <div className='col-md-6'>
-          <div className='card card-body'>
-            <h4 className='card-title'>Cargo Details</h4>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Sender Name:</strong> John Doe
+        <div className='card'>
+          <div className='card-body'>
+            <h5 className='card-title'>Trip Route</h5>
+            <p className='card-text'>From: Arusha</p>
+            <p className='card-text'>To: Mombasa</p>
+            <hr />
+            <h5 className='card-title'>Pick up information</h5>
+            <p className='card-text'>Location: Port of Arusha</p>
+            <p className='card-text'>Date: May 1, 2023</p>
+            <p className='card-text'>Cargo size: 20ft container</p>
+            <p className='card-text'>Cargo weight: 15,000 lbs</p>
+            <hr />
+            <h5 className='card-title'>Drop off information</h5>
+            <p className='card-text'>Location: Port of Mombasa</p>
+            <p className='card-text'>
+              Special instructions: Fragile items, handle with care
             </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Sender Phone:</strong> 08012345678
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Sender Address:</strong> 123, Main Street, Lagos
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Receiver Name:</strong> Jane Doe
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Receiver Phone:</strong> 08012345678
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Receiver Address:</strong> 123, Main Street, Lagos
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Parcel Weight:</strong> 2kg
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Parcel Type:</strong> Documents
-            </p>
-            <p className='card-text text-muted font-size-13'>
-              <strong>Parcel Description:</strong> Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Quisquam, quod.
-            </p>
+            <p className='card-text'>Vessel Berth date: May 15, 2023</p>
+            <p className='card-text'>Bill of lading: BL20230501001</p>
+            <p className='card-text'>Container number: NYKU1234567</p>
+            <p className='card-text'>Client Reference number: ACME-2023-001</p>
+            <hr />
+            <a href='#' className='card-link'>
+              Attachments
+            </a>
           </div>
         </div>
-        <div className='col-md-6'>
+
+       
+        <div className='col'>
           <div className='card card-body'>
             <h4 className='card-title'>Delivery Details</h4>
             <p className='card-text text-muted font-size-13'>
