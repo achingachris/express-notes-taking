@@ -119,7 +119,6 @@ const CargoDetails = () => {
           </div>
         </div>
 
-       
         <div className='col'>
           <div className='card card-body'>
             <h4 className='card-title'>Delivery Details</h4>
@@ -133,7 +132,7 @@ const CargoDetails = () => {
               <strong>Delivery Time:</strong> 12:00pm
             </p>
             <p className='card-text text-muted font-size-13'>
-              <strong>Delivery Address:</strong> 123, Main Street, Lagos
+              <strong>Delivery Address:</strong> 123, Main Street, Arusha
             </p>
             <p className='card-text text-muted font-size-13'>
               <strong>Delivery Note:</strong> Lorem ipsum dolor sit amet
