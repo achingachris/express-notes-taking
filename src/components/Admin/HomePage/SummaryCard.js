@@ -5,14 +5,11 @@ const SummaryCard = () => {
         <div className='card card-content'>
           <div className='card-body row justify-content-center'>
             <div className='col-5 align-self-center'>
-              <h4 className='mb-2 font-size-20'>1530</h4>
+              <h4 className='mb-2 font-size-20'>200</h4>
               <p className='mb-2 text-muted font-size-13 text-nowrap'>
-                Unique Visitors
+                Clients
               </p>
-              <span className='badge bg-soft-success text-success mt-1 shadow-none'>
-                <i className='mdi mdi-menu-up font-size-16' />
-                20.15%
-              </span>
+             
             </div>
             {/* <div className='col-7 align-self-center'>
               <span
@@ -32,14 +29,10 @@ const SummaryCard = () => {
         <div className='card card-content'>
           <div className='card-body row justify-content-center'>
             <div className='col-5 align-self-center'>
-              <h4 className='mb-2 font-size-20'>8320</h4>
+              <h4 className='mb-2 font-size-20'>100</h4>
               <p className='mb-2 text-muted font-size-13 text-nowrap'>
-                New Users
+                Transporters
               </p>
-              <span className='badge bg-soft-danger text-danger mt-1 shadow-none'>
-                <i className='mdi mdi-menu-down font-size-16' />
-                7.15%
-              </span>
             </div>
             {/* <div className='col-7 align-self-center text-end'>
               <span
@@ -59,14 +52,11 @@ const SummaryCard = () => {
         <div className='card card-content'>
           <div className='card-body row justify-content-center'>
             <div className='col-5 align-self-center'>
-              <h4 className='mb-2 font-size-20'>1840</h4>
+              <h4 className='mb-2 font-size-20'>25</h4>
               <p className='mb-2 text-muted font-size-13 text-nowrap'>
-                New Orders
+                Pending Approvals
               </p>
-              <span className='badge bg-soft-danger text-danger mt-1 shadow-none'>
-                <i className='mdi mdi-menu-down font-size-16' />
-                6.05%
-              </span>
+             
             </div>
             {/* <div className='col-7 align-self-center'>
               <span
@@ -86,14 +76,10 @@ const SummaryCard = () => {
         <div className='card card-content'>
           <div className='card-body row justify-content-center'>
             <div className='col-5 align-self-center'>
-              <h4 className='mb-2 font-size-20'>2501</h4>
+              <h4 className='mb-2 font-size-20'>100</h4>
               <p className='mb-2 text-muted font-size-13 text-nowrap'>
-                Total Sales
+                Allocated Orders
               </p>
-              <span className='badge bg-soft-success text-success mt-1 shadow-none'>
-                <i className='mdi mdi-menu-up font-size-16' />
-                8.97%
-              </span>
             </div>
             {/* <div className='col-7 align-self-center'>
               <span

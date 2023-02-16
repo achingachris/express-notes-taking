@@ -44,7 +44,7 @@ const index = () => {
                     <div className=''>
                       <div className='float-end'>
                         <h6 className='mb-0'>
-                          <b>Order Date :</b> 11/09/2018
+                          <b>Order Date :</b> 11/09/2023
                         </h6>
                         <h6>
                           <b>Order ID :</b> # 23654789
@@ -91,79 +91,19 @@ const index = () => {
                         <thead>
                           <tr>
                             <th>Quantity</th>
-                            <th>Item</th>
-                            <th>Description</th>
-                            <th>Unit Cost</th>
-                            <th>Total</th>
+                            <th>Route</th>
+                            <th>Cargo Weight</th>
+                            <th>Cost</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <th>2</th>
-                            <td>LCD</td>
-                            <td>
-                              There are many variations of passages of Lorem
-                              Ipsum available.
-                            </td>
-                            <td>$555.00</td>
-                            <td>$1110.00</td>
-                          </tr>
-                          <tr>
                             <th>1</th>
-                            <td>Mobile</td>
+                            <td>Daresalaam - Dodoma</td>
                             <td>
-                              It is a long established fact that a reader will
-                              be distracted.
+                              50 Tons
                             </td>
-                            <td>$100.00</td>
-                            <td>$100.00</td>
-                          </tr>
-                          <tr>
-                            <th>3</th>
-                            <td>Chair</td>
-                            <td>
-                              Contrary to popular belief, Lorem Ipsum is not
-                              simply random text.
-                            </td>
-                            <td>$30.00</td>
-                            <td>$90.00</td>
-                          </tr>
-                          <tr>
-                            <th>1</th>
-                            <td>Camera</td>
-                            <td>
-                              Aldus PageMaker including versions of Lorem Ipsum.
-                            </td>
-                            <td>$999.00</td>
-                            <td>$999.00</td>
-                          </tr>
-                          <tr>
-                            <th>3</th>
-                            <td>Headphone</td>
-                            <td>
-                              Various versions have evolved over the years,
-                              sometimes by accident.
-                            </td>
-                            <td>$20.00</td>
-                            <td>$60.00</td>
-                          </tr>
-                          <tr>
-                            <td colSpan={3} className='border-0' />
-                            <td className='border-0 font-size-14'>
-                              <b>Sub Total</b>
-                            </td>
-                            <td className='border-0 font-size-14'>
-                              <b>$2359.00</b>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th colSpan={3} className='border-0' />
-                            <td className='border-0 font-size-14'>
-                              <b>Tax Rate</b>
-                            </td>
-                            <td className='border-0 font-size-14'>
-                              <b>$0.00%</b>
-                            </td>
+                            <td>$1000.00</td>
                           </tr>
                           <tr className='bg-dark text-light'>
                             <th colSpan={3} className='border-0' />
