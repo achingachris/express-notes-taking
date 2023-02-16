@@ -1,4 +1,4 @@
-import CargoChart from './CargoChart'
+// import CargoChart from './CargoChart'
 
 const OverView = () => {
   return (
@@ -11,7 +11,7 @@ const OverView = () => {
               <div className='col-lg-9 border-right'>
                 <div className='card shadow-none mb-0 '>
                   <div className='card-body'>
-                    <CargoChart />
+                    {/* <CargoChart /> */}
                   </div>
                 </div>
               </div>
