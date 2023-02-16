@@ -48,9 +48,16 @@ const Sidemenu = () => {
             <li className='menu-title'>Finances</li>
 
             <li>
-              <Link href='/admin/invoice' legacyBehavior>
+              <Link href='/admin/2' legacyBehavior>
                 <a className=' waves-effect'>
                   <span>Invoice</span>
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/admin/invoice' legacyBehavior>
+                <a className=' waves-effect'>
+                  <span>Transaction Statements</span>
                 </a>
               </Link>
             </li>
