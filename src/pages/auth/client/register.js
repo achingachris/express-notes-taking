@@ -5,8 +5,8 @@ const register = () => {
   return (
     <TransporterAuth>
       <div className='d-flex justify-content-center align-items-center'>
-              <Image src='/logo.png' alt='' width='100' height='50' />
-            </div>
+        <Image src='/logo.png' alt='' width='100' height='50' />
+      </div>
       <div className='row'>
         <h2 className='text-center'>Client Registration</h2>
         <p className='text-center'>Enter details to register as a Client</p>
@@ -23,7 +23,7 @@ const register = () => {
                     className='form-control'
                     id='fullName'
                     name='fullName'
-                    required=''
+                    required='Please enter name of MD'
                   />
                 </div>
                 <div className='form-group'>
@@ -117,6 +117,43 @@ const register = () => {
                     required=''
                   />
                 </div>
+                <div className='form-group mt-3'>
+                  <label htmlFor='security-q1'>
+                    What was the name of your first pet?
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='security-q1'
+                    name='security-q1'
+                    placeholder='Enter your answer'
+                  />
+                </div>
+                <div className='form-group mt-3'>
+                  <label htmlFor='security-q2'>
+                    What is your mothers maiden name?
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='security-q2'
+                    name='security-q2'
+                    placeholder='Enter your answer'
+                  />
+                </div>
+                <div className='form-group mt-3 mb-3'>
+                  <label htmlFor='security-q3'>
+                    What was the name of the street you grew up on?
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='security-q3'
+                    name='security-q3'
+                    placeholder='Enter your answer'
+                  />
+                </div>
+
                 <button type='submit' className='btn btn-primary'>
                   Submit
                 </button>

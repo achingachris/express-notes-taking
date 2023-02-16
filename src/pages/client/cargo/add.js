@@ -68,6 +68,25 @@ const Add = () => {
                     name='dropoffLocation'
                   />
                 </div>
+                {/* dropdown to select multiple routes */}
+                <div className='form-group mb-3'>
+                  <>
+                    <label htmlFor='exampleDataList' className='form-label'>
+                      Cargo Route
+                    </label>
+                    <input
+                      className='form-control'
+                      list='datalistOptions'
+                      id='exampleDataList'
+                      placeholder='Type to search...'
+                    />
+                    <datalist id='datalistOptions'>
+                      <option value='Dodoma - Arusha'></option>
+                      <option value='Mombasa - Arusha'></option>
+                      <option value='Kigali - Daresalaam'></option>
+                    </datalist>
+                  </>
+                </div>
                 <div className='form-group mb-3'>
                   <label htmlFor='specialInstructions'>
                     Any special instructions if any

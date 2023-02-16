@@ -269,14 +269,14 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <div className='dropdown d-inline-block'>
+          {/* <div className='dropdown d-inline-block'>
             <button
               type='button'
               className='btn header-item noti-icon right-bar-toggle waves-effect'
             >
               <i className='mdi mdi-spin mdi-cog' />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

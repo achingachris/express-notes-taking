@@ -115,6 +115,42 @@ const register = () => {
                     name='relevantDocs'
                   />
                 </div>
+                <div className='form-group mt-3'>
+                  <label htmlFor='security-q1'>
+                    What was the name of your first pet?
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='security-q1'
+                    name='security-q1'
+                    placeholder='Enter your answer'
+                  />
+                </div>
+                <div className='form-group mt-3'>
+                  <label htmlFor='security-q2'>
+                    What is your mothers maiden name?
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='security-q2'
+                    name='security-q2'
+                    placeholder='Enter your answer'
+                  />
+                </div>
+                <div className='form-group mt-3 mb-3'>
+                  <label htmlFor='security-q3'>
+                    What was the name of the street you grew up on?
+                  </label>
+                  <input
+                    type='text'
+                    className='form-control'
+                    id='security-q3'
+                    name='security-q3'
+                    placeholder='Enter your answer'
+                  />
+                </div>
                 <button type='submit' className='btn btn-primary mt-3 mb-3'>
                   Submit
                 </button>
