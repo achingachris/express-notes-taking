@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='container-fluid'>
         <div className='row'>
-          <div className='col-sm-6'>© 2023 Kago.</div>
+          <div className='col-sm-6'>© 2023 Kago Africa Limited</div>
           <div className='col-sm-6'></div>
         </div>
       </div>

@@ -1,4 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import Client from '@/layout/client/Client'
+import Image from 'next/image'
 
 const index = () => {
   return (
@@ -11,7 +13,7 @@ const index = () => {
               <div className='page-title-right'>
                 <ol className='breadcrumb m-0'>
                   <li className='breadcrumb-item'>
-                    <a href='javascript: void(0);'>Amezia</a>
+                    <a href='javascript: void(0);'>Kago</a>
                   </li>
                   <li className='breadcrumb-item'>
                     <a href='javascript: void(0);'>Pages</a>
@@ -29,11 +31,12 @@ const index = () => {
               <div className='card-body'>
                 <div className='row'>
                   <div className='col-lg-6'>
-                    <img
-                      src='assets/images/logo-sm-dark.png'
+                    <Image
+                      src='/logo.png'
                       alt=''
                       className='img-fluid'
                       width={75}
+                      height={80}
                     />
                   </div>
                   {/* end col */}
@@ -61,9 +64,6 @@ const index = () => {
                         Joe Smith
                         <br />
                         795 Folsom Ave
-                        <br />
-                        San Francisco, CA 94107
-                        <br />
                         <abbr title='Phone'>P:</abbr> (123) 456-7890
                       </address>
                     </div>

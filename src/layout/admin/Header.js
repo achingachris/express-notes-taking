@@ -9,38 +9,18 @@ const Header = () => {
           <div className='navbar-brand-box'>
             <a href='#' className='logo logo-dark'>
               <span className='logo-sm'>
-                <Image
-                  src='/logo.png'
-                  alt=''
-                  height={22}
-                  width={50}
-                />
+                <Image src='/logo.png' alt='' height={22} width={50} />
               </span>
               <span className='logo-lg'>
-                <Image
-                  src='/logo.png'
-                  alt=''
-                  height={50}
-                  width={100}
-                />
+                <Image src='/logo.png' alt='' height={50} width={100} />
               </span>
             </a>
             <a href='#' className='logo logo-light'>
               <span className='logo-sm'>
-                <Image
-                  src='/logo.png'
-                  alt=''
-                  height={22}
-                  width={250}
-                />
+                <Image src='/logo.png' alt='' height={22} width={250} />
               </span>
               <span className='logo-lg'>
-                <Image
-                  src='/logo.png'
-                  alt=''
-                  height={17}
-                  width={50}
-                />
+                <Image src='/logo.png' alt='' height={17} width={50} />
               </span>
             </a>
           </div>
@@ -51,37 +31,6 @@ const Header = () => {
           >
             <i className='mdi mdi-menu' />
           </button>
-          {/* Tools */}
-          <div className='d-none d-sm-block ms-1'>
-            <div className='dropdown'>
-              <button
-                type='button'
-                className='btn header-item waves-effect'
-                data-bs-toggle='dropdown'
-                aria-haspopup='true'
-                aria-expanded='false'
-              >
-                <i className='mdi mdi-plus-box-multiple' />
-                <span className='d-none d-xl-inline-block ms-1'>Tools</span>
-                <i className='mdi mdi-chevron-down d-none d-xl-inline-block' />
-              </button>
-              <div className='dropdown-menu'>
-                {/* item*/}
-                <a href='javascript:void(0);' className='dropdown-item'>
-                  Photoshop
-                </a>
-                <a href='javascript:void(0);' className='dropdown-item'>
-                  Visual Studio
-                </a>
-                <a href='javascript:void(0);' className='dropdown-item'>
-                  Sublime Text 3
-                </a>
-                <a href='javascript:void(0);' className='dropdown-item'>
-                  Phpstorm
-                </a>
-              </div>
-            </div>
-          </div>
           <div className='d-none d-lg-inline-block'>
             <button
               type='button'
@@ -148,7 +97,7 @@ const Header = () => {
               </form>
             </div>
           </div>
-         
+
           {/* Notification */}
           <div className='dropdown d-inline-block'>
             <button
@@ -296,12 +245,14 @@ const Header = () => {
               aria-haspopup='true'
               aria-expanded='false'
             >
-              <img
+              <Image
                 className='rounded-circle header-profile-user'
-                src='assets/images/users/user-1.jpg'
+                src='/assets/images/users/user-1.jpg'
+                width={50}
+                height={50}
                 alt='Header Avatar'
               />
-              <span className='d-none d-xl-inline-block ms-1'>Amelia</span>
+              <span className='d-none d-xl-inline-block ms-1'>Kago User</span>
               <i className='mdi mdi-chevron-down d-none d-xl-inline-block' />
             </button>
             <div className='dropdown-menu dropdown-menu-end'>
@@ -310,18 +261,7 @@ const Header = () => {
                 <i className='dripicons-user d-inline-block text-muted me-2' />
                 Profile
               </a>
-              <a className='dropdown-item' href='#'>
-                <i className='dripicons-wallet d-inline-block text-muted me-2' />{' '}
-                My Wallet
-              </a>
-              <a className='dropdown-item d-block' href='#'>
-                <i className='dripicons-gear d-inline-block text-muted me-2' />{' '}
-                Settings
-              </a>
-              <a className='dropdown-item' href='#'>
-                <i className='dripicons-lock d-inline-block text-muted me-2' />{' '}
-                Lock screen
-              </a>
+
               <div className='dropdown-divider' />
               <a className='dropdown-item' href='#'>
                 <i className='dripicons-exit d-inline-block text-muted me-2' />

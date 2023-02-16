@@ -1,4 +1,5 @@
 import Admin from '@/layout/admin/Admin'
+import Image from 'next/image'
 
 const index = () => {
   return (
@@ -28,12 +29,13 @@ const index = () => {
             <div className='card'>
               <div className='card-body'>
                 <div className='row'>
-                  <div className='col-lg-6'>
-                    <img
-                      src='assets/images/logo-sm-dark.png'
+                <div className='col-lg-6'>
+                    <Image
+                      src='/logo.png'
                       alt=''
                       className='img-fluid'
                       width={75}
+                      height={80}
                     />
                   </div>
                   {/* end col */}

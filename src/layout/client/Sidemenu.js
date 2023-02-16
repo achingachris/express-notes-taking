@@ -30,6 +30,13 @@ const Sidemenu = () => {
                 </a>
               </Link>
             </li>
+            <li>
+              <Link href='/client/cargo/track' legacyBehavior>
+                <a className=' waves-effect'>
+                  <span>Track Cargo</span>
+                </a>
+              </Link>
+            </li>
 
             <li className='menu-title'>Finance</li>
             <li>
