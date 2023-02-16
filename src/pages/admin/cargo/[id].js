@@ -8,6 +8,7 @@ const CargoDetails = () => {
         <div className='col'>
           <div className='card card-body text-center'>
             <h4 className='card-title'>Cargo ID: 4523657</h4>
+            <h4 className='card-title'>Client Name: Ummar</h4>
             <p className='card-text text-muted font-size-13'>
               Cargo Status: Waiting Approval
             </p>
