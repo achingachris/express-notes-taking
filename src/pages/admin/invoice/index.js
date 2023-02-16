@@ -60,9 +60,9 @@ const index = () => {
                       <address className='font-size-13'>
                         <strong className='font-size-14'>Billed To :</strong>
                         <br />
-                        Joe Smith
+                        Ummar
                         <br />
-                        795 Folsom Ave
+                        Dodoma, TRanzania
                         <br />
                         San Francisco, CA 94107
                         <br />
@@ -73,9 +73,9 @@ const index = () => {
                       <address className='font-13'>
                         <strong className='font-size-14'>Shipped To:</strong>
                         <br />
-                        Joe Smith
+                        Ummar
                         <br />
-                        795 Folsom Ave
+                        Dodoma, TRanzania
                         <br />
                         San Francisco, CA 94107
                         <br />
@@ -113,7 +113,7 @@ const index = () => {
                               <b>Total</b>
                             </td>
                             <td className='border-0 font-size-14'>
-                              <b>$2359.00</b>
+                              <b>$1000.00</b>
                             </td>
                           </tr>
                         </tbody>

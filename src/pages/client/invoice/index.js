@@ -61,9 +61,9 @@ const index = () => {
                       <address className='font-size-13'>
                         <strong className='font-size-14'>Billed To :</strong>
                         <br />
-                        Joe Smith
+                        Ummar
                         <br />
-                        795 Folsom Ave
+                        Dodoma, TRanzania
                         <abbr title='Phone'>P:</abbr> (123) 456-7890
                       </address>
                     </div>
@@ -71,9 +71,9 @@ const index = () => {
                       <address className='font-13'>
                         <strong className='font-size-14'>Shipped To:</strong>
                         <br />
-                        Joe Smith
+                        Ummar
                         <br />
-                        795 Folsom Ave
+                        Dodoma, TRanzania
                         <br />
                         San Francisco, CA 94107
                         <br />
@@ -100,9 +100,7 @@ const index = () => {
                           <tr>
                             <th>1</th>
                             <td>Daresalaam - Dodoma</td>
-                            <td>
-                              50 Tons
-                            </td>
+                            <td>50 Tons</td>
                             <td>$1000.00</td>
                           </tr>
                           <tr className='bg-dark text-light'>
@@ -111,7 +109,7 @@ const index = () => {
                               <b>Total</b>
                             </td>
                             <td className='border-0 font-size-14'>
-                              <b>$2359.00</b>
+                              <b>$1000.00</b>
                             </td>
                           </tr>
                         </tbody>
