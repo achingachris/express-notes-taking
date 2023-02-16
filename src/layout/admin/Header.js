@@ -252,7 +252,7 @@ const Header = () => {
                 height={50}
                 alt='Header Avatar'
               />
-              <span className='d-none d-xl-inline-block ms-1'>Kago User</span>
+              <span className='d-none d-xl-inline-block ms-1'>Super Admin</span>
               <i className='mdi mdi-chevron-down d-none d-xl-inline-block' />
             </button>
             <div className='dropdown-menu dropdown-menu-end'>
