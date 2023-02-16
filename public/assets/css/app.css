@@ -13,7 +13,7 @@ File: Main Css File
   right: 0;
   left: 0;
   z-index: 1002;
-  background-color: #ffffff;
+  background-color: #FDEB08;
   -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
           box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02); }
 
@@ -173,7 +173,7 @@ File: Main Css File
   content: "\F0294"; }
 
 body[data-topbar="dark"] #page-topbar {
-  background-color: #44a2d2; }
+  background-color: #FDEB08; }
 
 body[data-topbar="dark"] .navbar-header .dropdown .show.header-item {
   background-color: rgba(255, 255, 255, 0.05); }

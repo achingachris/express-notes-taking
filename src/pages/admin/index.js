@@ -7,7 +7,7 @@ const index = () => {
   return (
     <Admin>
       <SummaryCard />
-      <OverView />
+      {/* <OverView /> */}
       <CargoTable />
     </Admin>
   )
