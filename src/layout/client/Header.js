@@ -7,10 +7,10 @@ const Header = () => {
         <div className='d-flex'>
           {/* LOGO */}
           <div className='navbar-brand-box'>
-            <a href='index.html' className='logo logo-dark'>
+            <a href='#' className='logo logo-dark'>
               <span className='logo-sm'>
                 <Image
-                  src='/assets/images/logo-sm.png'
+                  src='/logo.png'
                   alt=''
                   height={22}
                   width={50}
@@ -18,17 +18,17 @@ const Header = () => {
               </span>
               <span className='logo-lg'>
                 <Image
-                  src='/assets/images/logo-dark.png'
+                  src='/logo.png'
                   alt=''
-                  height={17}
-                  width={50}
+                  height={50}
+                  width={100}
                 />
               </span>
             </a>
-            <a href='index.html' className='logo logo-light'>
+            <a href='#' className='logo logo-light'>
               <span className='logo-sm'>
                 <Image
-                  src='/assets/images/logo-sm.png'
+                  src='/logo.png'
                   alt=''
                   height={22}
                   width={250}
@@ -36,7 +36,7 @@ const Header = () => {
               </span>
               <span className='logo-lg'>
                 <Image
-                  src='/assets/images/logo-light.png'
+                  src='/logo.png'
                   alt=''
                   height={17}
                   width={50}

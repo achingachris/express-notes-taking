@@ -1,8 +1,12 @@
 import TransporterAuth from '@/layout/auth/transporter/TransporterAuth'
+import Image from 'next/image'
 
 const register = () => {
   return (
     <TransporterAuth>
+      <div className='d-flex justify-content-center align-items-center'>
+              <Image src='/logo.png' alt='' width='100' height='50' />
+            </div>
       <div className='row'>
         <h2 className='text-center'>Transporter Registration</h2>
         <p className='text-center'>
