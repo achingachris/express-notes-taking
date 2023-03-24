@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Notes App</title>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-semibold mt-8">Notes App</h1>
+
+      <div class="mt-8">
+        <input
+          id="note-title"
+          class="border-2 border-gray-300 p-2 w-full"
+          type="text"
+          placeholder="Note title"
+        />
+        <textarea
+          id="note-content"
+          class="border-2 border-gray-300 p-2 mt-4 w-full"
+          placeholder="Note content"
+          rows="4"
+        ></textarea>
+        <button
+          id="add-note"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mt-4 rounded"
+        >
+          Add Note
+        </button>
+      </div>
+
+      <div
+        id="notes-list"
+        class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      ></div>
+    </div>
+
+    <script>
+      const noteTitleInput = document.getElementById('note-title')
+      const noteContentInput = document.getElementById('note-content')
+      const addNoteButton = document.getElementById('add-note')
+      const notesList = document.getElementById('notes-list')
+
+      async function fetchNotes() {
+        const response = await fetch('/notes')
+        const notes = await response.json()
+
+        notesList.innerHTML = ''
+        notes.forEach((note) => {
+          const noteElement = document.createElement('div')
+          noteElement.className = 'bg-white p-4 rounded shadow-md'
+          noteElement.innerHTML = `
+                    <h2 class="text-xl font-semibold">${note.title}</h2>
+                    <p class="mt-2">${note.content}</p>
+                `
+          notesList.appendChild(noteElement)
+        })
+      }
+
+      async function addNote() {
+        const title = noteTitleInput.value
+        const content = noteContentInput.value
+
+        if (title.trim() && content.trim()) {
+          const response = await fetch('/notes', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ title, content }),
+          })
+
+          if (response.ok) {
+            noteTitleInput.value = ''
+            noteContentInput.value = ''
+            await fetchNotes()
+          }
+        }
+      }
+
+      addNoteButton.addEventListener('click', addNote)
+      fetchNotes()
+    </script>
+  </body>
+</html>
