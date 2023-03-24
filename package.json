@@ -1,23 +1,28 @@
 {
   "name": "express-notes-taking",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple app that takes in Notes and all that",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/achingachris/express-notes-taking.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Achinga",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/achingachris/express-notes-taking/issues"
   },
   "homepage": "https://github.com/achingachris/express-notes-taking#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
