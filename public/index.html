@@ -7,119 +7,42 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Comfortaa', cursive;
+      }
+    </style>
     <title>Notes App</title>
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-green-200">
     <div id="app" class="container mx-auto px-4">
-      <h1 class="text-3xl font-semibold mt-8">Notes App</h1>
-
+      <h1 class="text-3xl font-semibold mt-8 text-center underline">
+        Notes App
+      </h1>
       <div class="mt-8">
         <input
           id="note-title"
-          class="border-2 border-gray-300 p-2 w-full"
+          class="border-2 border-gray-300 p-2 w-full rounded-lg"
           type="text"
           placeholder="Note title"
         />
         <textarea
           id="note-content"
-          class="border-2 border-gray-300 p 2 mt-2 w-full h-32"
+          class="border-2 border-gray-300 rounded-lg p-2 mt-2 w-full h-32"
           placeholder="Note content"
         ></textarea>
-        <button id="save-note" class="bg-blue-500 text-white p-2 mt-2">
+        <button id="save-note" class="bg-green-500 bg-opacity-100 rounded-lg text-white p-2 mt-2">
           Save Note
         </button>
       </div>
-
       <div id="notes-list" class="mt-8"></div>
     </div>
-
-    <script>
-      const noteTitleInput = document.getElementById('note-title')
-      const noteContentInput = document.getElementById('note-content')
-      const saveNoteButton = document.getElementById('save-note')
-      const notesList = document.getElementById('notes-list')
-      let editingNoteId = null
-
-      async function fetchNotes() {
-        const response = await fetch('/notes')
-        const notes = await response.json()
-        renderNotes(notes)
-      }
-
-      function renderNotes(notes) {
-        notesList.innerHTML = notes
-          .map(
-            (note) => `
-                <div class="bg-white p-4 rounded shadow mb-4">
-                    <h2 class="text-xl font-semibold">${note.title}</h2>
-                    <p>${note.content.substring(0, 100)}...</p>
-                    <button onclick="editNote('${
-                      note.id
-                    }')" class="bg-yellow-500 text-white p-2 mt-2">Edit</button>
-                    <button onclick="deleteNote('${
-                      note.id
-                    }')" class="bg-red-500 text-white p-2 mt-2">Delete</button>
-                    <button onclick="shareNote('${note.title}', '${
-              note.content
-            }')" class="bg-green-500 text-white p-2 mt-2">Share</button>
-                </div>
-            `
-          )
-          .join('')
-      }
-
-      async function addOrUpdateNote() {
-        const title = noteTitleInput.value
-        const content = noteContentInput.value
-
-        if (title.trim() && content.trim()) {
-          if (editingNoteId) {
-            await fetch(`/notes/${editingNoteId}`, {
-              method: 'PUT',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ title, content }),
-            })
-          } else {
-            await fetch('/notes', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ title, content }),
-            })
-          }
-
-          noteTitleInput.value = ''
-          noteContentInput.value = ''
-          editingNoteId = null
-          saveNoteButton.textContent = 'Save Note'
-
-          await fetchNotes()
-        }
-      }
-
-      async function editNote(id) {
-        const response = await fetch(`/notes/${id}`)
-        const note = await response.json()
-        noteTitleInput.value = note.title
-        noteContentInput.value = note.content
-        editingNoteId = id
-        saveNoteButton.textContent = 'Update Note'
-      }
-
-      async function deleteNote(id) {
-        await fetch(`/notes/${id}`, { method: 'DELETE' })
-        await fetchNotes()
-      }
-
-      function shareNote(title, content) {
-        const text = `${title} - ${content}`
-        const url =
-          'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text)
-        window.open(url, '_blank')
-      }
-
-      saveNoteButton.addEventListener('click', addOrUpdateNote)
-
-      fetchNotes()
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
