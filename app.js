@@ -25,19 +25,22 @@ app.post('/notes', (req, res) => {
 
 // Edit note
 app.put('/notes/:id', (req, res) => {
-  const noteId = parseInt(req.params.id)
-  const { title, content } = req.body
-
-  const noteIndex = notes.findIndex((note) => note.id === noteId)
-
-  if (noteIndex === -1) {
-    res.status(404).json({ error: 'Note not found' })
-  } else {
-    notes[noteIndex].title = title
-    notes[noteIndex].content = content
-    res.json(notes[noteIndex])
-  }
-})
+    const noteId = req.params.id;
+    const { title, content } = req.body;
+  
+    // Find the note in the notes array by its ID
+    const noteIndex = notes.findIndex(note => note.id === noteId);
+  
+    if (noteIndex !== -1) {
+      // Update the note
+      notes[noteIndex].title = title;
+      notes[noteIndex].content = content;
+      res.sendStatus(200);
+    } else {
+      res.sendStatus(404);
+    }
+  });
+  
 
 // Delete note
 app.delete('/notes/:id', (req, res) => {
