@@ -2,6 +2,8 @@
 
 A simple note taking app built with Node.js, Express.js, and SQLite. This app provides a REST API to create, read, update, and delete notes.
 
+![Notes App](./notesapp.PNG)
+
 ## Installation
 
 1. Clone the repository:
